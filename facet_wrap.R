@@ -1,4 +1,4 @@
-facet_wrap = function(p, pad=0.05) { 
+facet_wrap <- function(p, pad=0.05) { 
   # get facet font attributes
   th = theme_get()
   if (length(p$theme) > 0L)
