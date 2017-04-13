@@ -1,10 +1,10 @@
-samp_size = function(z.val, margin, c.interval, population) {
+samp_size <- function(z.val, margin, c.interval, population) {
   ss = (z.val^2 * margin * (1 - margin))/(c.interval^2)
   return(ss/(1 + ((ss - 1)/population)))
 }
 
 
-sample_size.table = function(margin=.5, c.interval=.05, population) {
+sample_size.table <- function(margin=.5, c.interval=.05, population) {
   z.val=c(1.281551565545, 1.644853626951, 1.959963984540,
           2.326347874041, 2.575829303549, 2.807033768344,
           3.090232306168, 3.290526731492, 3.890591886413)
@@ -27,7 +27,7 @@ sample_size.table = function(margin=.5, c.interval=.05, population) {
 }
 
 
-sample_size = function(c.lev, margin=.5,
+sample_size <- function(c.lev, margin=.5,
                        c.interval=.05, population) {
   z.val = qnorm(.5+c.lev/200)
   ss = (z.val^2 * margin * (1-margin))/c.interval^2
