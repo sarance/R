@@ -1,4 +1,4 @@
-find.freq <- function(x)
+find_freq <- function(x)
 {
   n <- length(x)
   spec <- spec.ar(c(x),plot=FALSE)
