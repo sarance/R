@@ -27,5 +27,3 @@ import_block <- function(id, dir = NULL, edit = TRUE, ...){
     message("Switch to ", dir, " and run servr::httw() to live edit")
   }
 }
-
-import_block("5558084", "/Users/sarance/Desktop") 
